@@ -4,9 +4,9 @@
     "description": "Calculadora de autonomia de veículos",
     "icons": [
         {
-            "src": "volante128.png",
+            "src": "volante.png",
             "sizes": "128x128",
-            "type": "icons/png"
+            "type": "image/png"
         }
     ],
     "start_url": "/pwa-autonomia",
