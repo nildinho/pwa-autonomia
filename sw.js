@@ -3,10 +3,7 @@ const CACHE_NAME = 'calculadora-autonomia-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/style.css',
-  '/autonomia.js',
-  '/manifest.json',
-  '/icon-192x192.png'
+  '/style.css'
 ];
 
 self.addEventListener('activate', function(event) {
