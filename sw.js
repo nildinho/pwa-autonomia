@@ -6,7 +6,7 @@ const urlsToCache = [
   '/style.css',
   '/autonomia.js',
   '/manifest.json',
-  '/volante.png'
+  '/hal192.png'
 ];
 
 self.addEventListener('activate', function(event) {
