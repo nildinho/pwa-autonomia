@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Autonomia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Autonomia</h1>
+    </header>
+    <main>
+        <form> 
+            <label for="capacidadeTanque">Capacidade do Tanque(litros)</label>
+            <input type="number" id="capacidadeTanque" required>
+            <label for="consumoMedio">consumo Médio (km/l)</label>
+            <input type="number" id="consumoMedio" required>
+            <button type="button" id="calcular">Calcular Autonomia</button>
+            <button type="button" id="limpar"> Limpar Campos</button>
+            <p id="resultado"></p>
+        </form>
+    </main>
+    <script>
+        if('serviceWorker' in navigator){
+            window.addEventListener('load',function(){
+                navigator.serviceWorker.register('/sw.js').then(function(registration){
+                    //Registro do service Worker bem sucedido
+                    console.log('ServiceWorker registrado com escopo:',registration.scope)
+                },function(err){
+                    //Registro do service worker falhou
+                    console.log('service worker registro falhou:', err)
+                })
+            })
+        }
+    </script>
+    <script src="autonomia.js"></script>
+</body>
+</html>
