@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     limparButton.addEventListener('click', limparCampos);
 
     function calcularAutonomia() {
-        let capacidadeTanque = parseFloat(document.getElementById('capacidadeTanque').value);
-        let consumoMedio = parseFloat(document.getElementById('consumoMedio').value);
+        let capacidadeTanque = Number(document.getElementById('capacidadeTanque').value);
+        let consumoMedio = Number(document.getElementById('consumoMedio').value);
 
         let autonomia = (capacidadeTanque / consumoMedio) * 100;
         resultadoElement.textContent = `Autonomia do carro é aproximadamente: ${autonomia.toFixed(2)} km por litro`;
