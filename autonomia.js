@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const calcularButton = document.getElementById('calcular');
-    const limparButton = document.getElementById('limpar');
-    const resultadoElement = document.getElementById('resultado');
+    let calcularButton = document.getElementById('calcular');
+    let limparButton = document.getElementById('limpar');
+    let resultadoElement = document.getElementById('resultado');
 
     calcularButton.addEventListener('click', calcularAutonomia);
     limparButton.addEventListener('click', limparCampos);
