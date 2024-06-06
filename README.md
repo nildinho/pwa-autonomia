@@ -13,6 +13,6 @@ Esse Repositório hospeda um PWA sobre a autonomia de veículos.
             alt="CSS válido!" />
     </a>
 </p>
-#### QR Code
+####QR Code
 
 ![image](https://github.com/nildinho/pwa-autonomia/assets/129780260/ce20a69d-2766-4318-a892-80e51d3a8be7)
