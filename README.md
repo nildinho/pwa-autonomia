@@ -14,3 +14,4 @@ Esse Repositório hospeda um PWA sobre a autonomia de veículos.
     </a>
 </p>
          
+![image](https://github.com/nildinho/pwa-autonomia/assets/129780260/ce20a69d-2766-4318-a892-80e51d3a8be7)
