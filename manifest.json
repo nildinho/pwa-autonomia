@@ -9,10 +9,10 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/pwa-autonomia",
+    "start_url": "/pwa-autonomia/",
     "display": "standalone",
     "background_color": "#fff",
     "theme_color": "#00f000",
     "orientation": "portrait",
-    "lang": "pt-BR"
+    "lang": "pt-br"
 }
