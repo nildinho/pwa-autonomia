@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="volante.png" type="image/png">
     <link rel="manifest" href="manifest.json">
-
 </head>
 <body>
     <header>
@@ -15,26 +14,26 @@
     </header>
     <main>
         <form> 
-            <label for="capacidadeTanque">Capacidade do Tanque(litros)</label>
+            <label for="capacidadeTanque">Capacidade do Tanque (litros)</label>
             <input type="number" id="capacidadeTanque" required>
-            <label for="consumoMedio">consumo Médio (km/l)</label>
+            <label for="consumoMedio">Consumo Médio (km/l)</label>
             <input type="number" id="consumoMedio" required>
             <button type="button" id="calcular">Calcular Autonomia</button>
-            <button type="button" id="limpar"> Limpar Campos</button>
+            <button type="button" id="limpar">Limpar Campos</button>
             <p id="resultado"></p>
         </form>
     </main>
     <script>
-        if('serviceWorker' in navigator){
-            window.addEventListener('load',function(){
-                navigator.serviceWorker.register('/sw.js').then(function(registration){
-                    //Registro do service Worker bem sucedido
-                    console.log('ServiceWorker registrado com escopo:',registration.scope)
-                },function(err){
-                    //Registro do service worker falhou
-                    console.log('service worker registro falhou:', err)
-                })
-            })
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('Service Worker registrado com escopo:', registration.scope);
+                    })
+                    .catch(function(err) {
+                        console.error('Erro ao registrar o Service Worker:', err);
+                    });
+            });
         }
     </script>
     <script src="autonomia.js"></script>

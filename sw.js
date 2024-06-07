@@ -7,14 +7,6 @@ const urlsToCache = [
   '/manifest.json',
   '/volante.png'
 ];
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(cachePWA)
-      .then((cache) => {
-        return cache.addAll(urlsToCache)
-      })
-  )
-})
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
